@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "Notion Theme Colour Changer",
+    "description": "Adds a theme-color to Notion",
+    "version": "0.0.0.1",
+    "icons": {},
+    "permissions": ["activeTab"],
+    "content_scripts": [
+        {
+            "matches": ["https://notion.so/*", "https://www.notion.so/*"],
+            "js": ["content.js"]
+        }
+    ]
+}
